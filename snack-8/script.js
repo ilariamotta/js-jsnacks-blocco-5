@@ -21,3 +21,14 @@ const students = [
 
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
+
+
+sezioneStudente = students.find(function (studente, index) {
+  if (studente.name === "Marco Lanci") {
+    return true;
+  } else {
+    return false;
+  }
+});
+
+console.log(sezioneStudente.class);
